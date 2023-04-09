@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="dog-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css" />
     <script
       src="https://kit.fontawesome.com/0af1d80857.js"
       crossorigin="anonymous"
@@ -18,48 +19,10 @@
     <script src="login.js"></script>
     <title>With Your Pups!</title>
   </head>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <i class="fas fa-dog" style="font-size: 55px"></i>
-      <a class="navbar-brand" href="index.html">Dine-In Doggos</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-        <div>
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html">SPEAK</a>
-          </li>
-            <li class="nav-item">
-              <a class="nav-link" href="eat.html">EAT<span class="sr-only" href="index.html">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="play.html">PLAY</a>
-            </li>
-              <a class="nav-link" href="fetch.html">FETCH</a>
-          </div>
-          <div>
-            <a type="button" class="btn btn-outline-secondary" href="signup.html"
-            >Sign-up</a>
-            <a type="button" class="btn btn-dark" href="login.html">Log-In</a>
-          </div>
-        </ul>
-      </div>
-    </nav>
-  </head>
   <body>
+    <!--............ Nav Bar ............-->
+    <?php include('../component/navigation.php'); ?>
+
     <form id="form">
     <div class="container">
       <h1> Log-In 🐕‍🦺</h1>
@@ -78,10 +41,13 @@
           <input type="checkbox" class="form-check-input" id="Check1">
           <label class="form-check-label" for="Check1">Save this Computer</label>
         </div>
-        <button 
+        <button
       type="submit" class="btn btn-success" href='index.html'>Submit</button>
       </form>
     </div>
   </div>
+
+  <!--............ Footer ............-->
+  <?php include('../component/footer.php'); ?>
 </body>
 </html>

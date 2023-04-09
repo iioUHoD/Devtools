@@ -1,84 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="dog-solid.svg" type="image/x-icon">
-    <script
-      src="https://kit.fontawesome.com/0af1d80857.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="signup.js"></script>
-    <title>With Your Pups!</title>
-  </head>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <i class="fas fa-dog" style="font-size: 55px"></i>
-      <a class="navbar-brand" href="index.html">Dine-In Doggos</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-        <div>
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html">SPEAK</a>
-          </li>
-            <li class="nav-item">
-              <a class="nav-link" href="eat.html">EAT<span class="sr-only" href="index.html">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="play.html">PLAY</a>
-            </li>
-              <a class="nav-link" href="fetch.html">FETCH</a>
-          </div>
-          <div>
-            <a type="button" class="btn btn-outline-secondary" href="signup.html"
-            >Sign-up</a>
-            <a type="button" class="btn btn-dark" href="login.html">Log-In</a>
-          </div>
-        </ul>
-      </div>
-    </nav>
-  <body>
-    <div class="container">
-      <h1>Sign-Up 🐕‍🦺</h1>
-      <br>
-      <form id="form">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="dog-solid.svg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/0af1d80857.js" crossorigin="anonymous"></script>
+  <script src="signup.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+  <title>With Your Pups!</title>
+</head>
+
+<body>
+  <!--............ Nav Bar ............-->
+  <?php include('../component/navigation.php'); ?>
+
+  <div class="container">
+    <h1>Sign-Up 🐕‍🦺</h1>
+    <br>
+    <form id="form">
       <div class="form-group">
         <label for="ID">ID</label>
-        <input type="text" class="form-control" id="id" name="id" minlength="5" maxlength="13" pattern="[A-Za-z0-9]{4,12}" required/>
+        <input type="text" class="form-control" id="id" name="id" minlength="5" maxlength="13"
+          pattern="[A-Za-z0-9]{4,12}" required />
       </div>
 
       <div class="form-group row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
         <div class="col-sm-10">
-          <input type="password" pattern="[A-Za-z0-9]{4,12}" min="3" max="12" class="form-control" id="inputPassword"required>
+          <input type="password" pattern="[A-Za-z0-9]{4,12}" min="3" max="12" class="form-control" id="inputPassword"
+            required>
         </div>
       </div>
 
       <div class="form-group row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
         <div class="col-sm-10">
-          <input type="password" pattern="[A-Za-z0-9]{4,12}" minlength="3" maxlength="12" class="form-control" id="inputPassword" required>
+          <input type="password" pattern="[A-Za-z0-9]{4,12}" minlength="3" maxlength="12" class="form-control"
+            id="inputPassword" required>
         </div>
       </div>
       <div class="form-group">
@@ -99,21 +61,11 @@
 
       <div class="form-group">
         <label for="inputAddress">Address</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress"
-          placeholder=" Peachtree St"
-          required/>
+        <input type="text" class="form-control" id="inputAddress" placeholder=" Peachtree St" required />
       </div>
       <div class="form-group">
         <label for="inputAddress2">Address 2</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress2"
-          placeholder="Apartment, studio, or floor"
-        />
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -178,29 +130,22 @@
         </div>
         <div class="form-group col-md-2">
           <label for="inputZip">Zip</label>
-          <input
-            type="text"
-            title="Please enter a valid zip code (23456 or 12345-123)"
-            class="form-control"
-            id="inputZip"
-            pattern="^\(?\d{5}\)?([-]\d{3})?$"
-            required/>
+          <input type="text" title="Please enter a valid zip code (23456 or 12345-123)" class="form-control"
+            id="inputZip" pattern="^\(?\d{5}\)?([-]\d{3})?$" required />
         </div>
         <div class="form-group">
           <label for="number">Phone Number</label>
-          <input
-            type="number"
-            class="form-control"
-            id="phoneNumber"
-            name="phoneNumber"
-            pattern="([0-9]{9})"
-          />
+          <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" pattern="([0-9]{9})" />
         </div>
       </div>
       <small id="emailHelp" class="form-text text-muted">We'll never share your info with anyone else.</small>
       <button type="submit" id='submit' class="btn btn-secondary btn-lg btn-block mb-3">Submit</button>
-    </fieldset>
-    </div>
+      </fieldset>
+  </div>
   </form>
-  </body>
+
+  <!--............ Footer ............-->
+  <?php include('../component/footer.php'); ?>
+</body>
+
 </html>
