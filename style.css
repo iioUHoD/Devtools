@@ -112,7 +112,7 @@ body {
   margin-top: 1.5em;
 }
 
-/*left-right*/
+/*......left-right......*/
 article {
   position: relative;
   top: 50%;
@@ -133,6 +133,33 @@ article {
   background: #fff;
   grid-column: 2;
 }
+
+/*......read more......*/
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
 /* ......//about us//...... */
 
 #about {
@@ -299,6 +326,15 @@ article {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+  overflow: hidden;
+}
+
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img:hover {
+  transform: scale(1.1);
 }
 
 .detail-item {
