@@ -19,17 +19,14 @@
     <section class="container">
         <div class="left-half">
             <article>
-                <h1>Pet Friendly Hotels in Bangkok</h1>
-                <p>There are 111 pet friendly hotels in Bangkok. Need help to decide where to stay with your dog? You
-                    can browse the results below and filter by amenities to find the perfect spot. All pet policy
-                    information is guaranteed.</p>
+                <h1>Location Pet Friendly Hotels in Bangkok</h1>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1G_RPHo8hRP_VKsNMmKWV8epOy4kUuYw&ehbc=2E312F" width="640" height="480"></iframe>
             </article>
         </div>
         <div class="right-half">
             <article>
-                <h1>Top 10 Pet Friendly Hotels.</h1>
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1G_RPHo8hRP_VKsNMmKWV8epOy4kUuYw&ehbc=2E312F"
-                    width="640" height="480"></iframe>
+                <h1>โรงแรมในกรุงเทพ อนุญาตให้สัตว์เลี้ยงเข้าพักได้</h1>
+                <p>หากต้องการความช่วยเหลือในการตัดสินใจว่าจะพักที่ไหนกับสัตว์เลี้ยงของคุณ? เราได้จัดโรงแรมที่สัตว์เลี้ยงเข้าพักได้ 10 แห่ง ในกรุงเทพที่มี Rating สูงสุดโดยอ้างอิงเว็บไซต์ booking คุณสามารถเลือกดูโรงแรมด้านล่างเพื่อค้นหาที่พักที่สมบูรณ์แบบสำหรับคุณ</p>
             </article>
         </div>
     </section>
@@ -189,7 +186,7 @@
                                 alt="" />
                         </div>
                         <div class="detail-description">
-                            <h2 class="detail-titile">capella bangkok</h2>
+                            <h2 class="detail-titile">Capella Bangkok</h2>
                             <p>
                                 300/2 ถนนเจริญกรุง แขวงยานนาวา เขตสาทร กรุงเทพมหานคร 10120
                             </p>
