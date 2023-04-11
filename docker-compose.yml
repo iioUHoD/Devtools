@@ -3,6 +3,6 @@ version: '3'
 services:
   frontend:
     build:
-      context: ./Frontend
+      context: ./Front-End
       dockerfile: Dockerfile
     image: chanpong/my-frontend_image:1.0
