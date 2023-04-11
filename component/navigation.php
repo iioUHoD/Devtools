@@ -8,42 +8,89 @@
       <!-- <span class="navbar-toggler-icon"></span> -->
     </button>
 
+    <?php
+      $path = $_SERVER['REQUEST_URI'];
+      $active = str_replace('/','', $path);
+    ?>
+
     <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
       <div>
         <ul class="navbar-nav">
-        <li id="nav-item" class="nav-item active">
-            <a class="nav-link" href="../index.php">HOME</a>
+          <li id="nav-item" class="nav-item">
+            <a
+              <?php if ($_SERVER['SCRIPT_NAME'] == "/index.php") { ?>
+                class="nav-link active"
+                style="color: #ffcd19;"
+              <?php   } else {  ?>
+                class="nav-link"
+              <?php } ?>
+                href="../index.php">HOME
+            </a>
           </li>
           <li id="nav-item" class="nav-item">
-            <a class="nav-link" href="../view/hotel.php">HOTEL</a>
+            <a
+              <?php if ($_SERVER['SCRIPT_NAME'] == "/view/hotel.php") { ?>
+                class="nav-link active"
+                style="color: #ffcd19;"
+              <?php   } else {  ?>
+                class="nav-link"
+              <?php } ?>
+              href="../view/hotel.php">HOTEL
+            </a>
           </li>
           </li>
           <li id="nav-item" class="nav-item">
-            <a class="nav-link" href="../view/hospital.php">HOSPITAL</a>
+            <a
+              <?php if ($_SERVER['SCRIPT_NAME'] == "/view/hospital.php") { ?>
+                class="nav-link active"
+                style="color: #ffcd19;"
+              <?php   } else {  ?>
+                class="nav-link"
+              <?php } ?>
+              href="../view/hospital.php">HOSPITAL
+            </a>
           </li>
           <li id="nav-item" class="nav-item">
-            <a class="nav-link" href="../view/restaurant.php">RESTAURANT</a>
+            <a
+              <?php if ($_SERVER['SCRIPT_NAME'] == "/view/restaurant.php") { ?>
+                class="nav-link active"
+                style="color: #ffcd19;"
+              <?php   } else {  ?>
+                class="nav-link"
+              <?php } ?>
+              href="../view/restaurant.php">RESTAURANT
+            </a>
           </li>
           <li id="nav-item" class="nav-item">
-            <a class="nav-link" href="../view/store.php">STORE</a>
+            <a
+              <?php if ($_SERVER['SCRIPT_NAME'] == "/view/store.php") { ?>
+                class="nav-link active"
+                style="color: #ffcd19;"
+              <?php   } else {  ?>
+                class="nav-link"
+              <?php } ?>
+              href="../view/store.php">STORE
+            </a>
           </li>
           <li id="nav-item" class="nav-item">
-            <a class="nav-link" href="../view/renter.php">RENTER</a>
+            <a
+              <?php if ($_SERVER['SCRIPT_NAME'] == "/view/renter.php") { ?>
+                class="nav-link active"
+                style="color: #ffcd19;"
+              <?php   } else {  ?>
+                class="nav-link"
+              <?php } ?>
+              href="../view/renter.php">RENTER
+            </a>
           </li>
+        </ul>
       </div>
+
+
       <div>
         <a type="button" class="btn btn-outline-warning" href="../view/signup.php">Sign-up</a>
         <a id="navbar-btn-login" type="button" class="btn btn-outline-light" href="../view/login.php">Log-In</a>
       </div>
       </ul>
     </div>
-  </nav>
-
-  <script>
-    // Add active class to the current button
-    $("#nav-item").on('click', 'li', function () {
-        $("#nav-item li.active").removeClass("active");
-        // adding classname 'active' to current click li
-        $(this).addClass("active");
-    });
-</script>
+</nav>

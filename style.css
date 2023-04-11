@@ -60,11 +60,6 @@ body {
 
 /* desktop mode............/// */
 
-.active{
-  color: white;
-}
-/* a:active */
-
 #navbar {
   top: 0;
   position: sticky;
