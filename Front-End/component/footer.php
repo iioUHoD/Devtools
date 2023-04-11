@@ -1,5 +1,5 @@
 <footer id="footer" class="bg-dark">
-    <h2>&copy; all rights reserved</h2>
+    <h2>&copy; IT KMITL</h2>
 </footer>
 
 <!-- .................../ JS Code for smooth scrolling /...................... -->
