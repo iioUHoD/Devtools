@@ -23,12 +23,14 @@
     <!--............ Nav Bar ............-->
     <?php include('../component/navigation.php'); ?>
 
-    <form id="form">
-    <div class="container">
-      <h1> Log-In 🐕‍🦺</h1>
+    <div id="signup-container" class="container">
+      <center>
+        <h1> Log-In 🐕‍🦺</h1>
+
+      </center>
       <br>
       <div class="container">
-      <form>
+      <form id="form">
         <div class="form-group">
           <label for="id">ID</label>
           <input type="id" class="form-control" id="id" aria-describedby="id" required>
@@ -41,10 +43,10 @@
           <input type="checkbox" class="form-check-input" id="Check1">
           <label class="form-check-label" for="Check1">Save this Computer</label>
         </div>
-        <button
-      type="submit" class="btn btn-success" href='index.html'>Submit</button>
+        <button type="submit" class="btn btn-success btn-lg btn-block mb-3" href="../index.php">Submit</button>
       </form>
     </div>
+</form>
   </div>
 
   <!--............ Footer ............-->

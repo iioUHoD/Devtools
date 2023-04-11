@@ -19,15 +19,17 @@
           </li>
           </li>
           <li id="nav-item" class="nav-item">
-            <a class="nav-link" href="about-us.html">SPEAK</a>
+            <a class="nav-link" href="../view/hospital.php">HOSPITAL</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="eat.html">EAT<span class="sr-only" href="index.html">(current)</span></a>
+          <li id="nav-item" class="nav-item">
+            <a class="nav-link" href="../view/restaurant.php">RESTAURANT</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="play.html">PLAY</a>
+          <li id="nav-item" class="nav-item">
+            <a class="nav-link" href="../view/store.php">STORE</a>
           </li>
-          <a class="nav-link" href="fetch.html">FETCH</a> -->
+          <li id="nav-item" class="nav-item">
+            <a class="nav-link" href="../view/renter.php">RENTER</a>
+          </li>
       </div>
       <div>
         <a type="button" class="btn btn-outline-warning" href="../view/signup.php">Sign-up</a>
@@ -36,3 +38,12 @@
       </ul>
     </div>
   </nav>
+
+  <script>
+    // Add active class to the current button
+    $("#nav-item").on('click', 'li', function () {
+        $("#nav-item li.active").removeClass("active");
+        // adding classname 'active' to current click li
+        $(this).addClass("active");
+    });
+</script>

@@ -18,8 +18,10 @@
   <!--............ Nav Bar ............-->
   <?php include('../component/navigation.php'); ?>
 
-  <div class="container">
-    <h1>Sign-Up 🐕‍🦺</h1>
+  <div id="signup-container" class="container">
+    <center>
+      <h1>Sign-Up 🐕‍🦺</h1>
+    </center>
     <br>
     <form id="form">
       <div class="form-group">
@@ -139,7 +141,7 @@
         </div>
       </div>
       <small id="emailHelp" class="form-text text-muted">We'll never share your info with anyone else.</small>
-      <button type="submit" id='submit' class="btn btn-secondary btn-lg btn-block mb-3">Submit</button>
+      <button type="submit" id='submit' class="btn btn-success btn-lg btn-block mb-3">Submit</button>
       </fieldset>
   </div>
   </form>
