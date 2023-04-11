@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+        
+        stages {
+            stage('Initialize Stage') {
+                steps {
+                    echo 'Initial : Delete containers and images'
+                     dir('Devtools') {
+                        echo "Current path is  ${pwd()}"
+                        sh 'docker-compose down --rmi all --volumes || true'
+                     }
+                }
+            }
+
+            stage('Build Stage'){
+                steps {
+                    dir('Devtools') {
+                        echo "Current path is ${pwd()}"
+                        sh "docker-compose build"
+                    }
+                }
+            }
+
+            stage('Push Stage'){
+                steps {
+                    dir('Devtools') {
+                        withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) {
+                            sh 'docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD'
+                        }
+                        sh 'docker push chanpong/my-frontend_image:1.0'
+                        
+                    }
+                }
+            }
+            
+            stage('Trigger to slave job'){
+                steps {
+                    build job: 'slave'
+                }
+            }
+        }
+}
