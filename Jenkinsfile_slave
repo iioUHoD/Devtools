@@ -2,7 +2,7 @@ pipeline {
     agent any
         environment {
             DOCKER_CONTAINER_NAME_FRONTEND = "frontend_server"
-            DOCKER_IMAGE_NAME_FRONTEND     = "chanpong/my-frontend_image:1.0"
+            DOCKER_IMAGE_NAME_FRONTEND     = "luktarn/my-frontend_image:1.0"
         }
 
 
@@ -33,6 +33,6 @@ pipeline {
                     }
                 }
             }
-        
+
         }
 }

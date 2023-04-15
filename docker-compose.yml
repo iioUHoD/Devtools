@@ -5,4 +5,4 @@ services:
     build:
       context: ./Front-End
       dockerfile: Dockerfile
-    image: chanpong/my-frontend_image:1.0
+    image: luktarn/my-frontend_image:1.0
