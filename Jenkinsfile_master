@@ -17,6 +17,7 @@ pipeline {
                     dir('Devtools') {
                         echo "Current path is ${pwd()}"
                         sh "docker-compose build"
+                        sh "test"
                     }
                 }
             }
