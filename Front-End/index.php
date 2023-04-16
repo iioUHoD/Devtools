@@ -17,7 +17,18 @@
   <?php include('./component/navigation.php'); ?>
 
   <div class="home">
-    <img id="home-image" src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.15752-9/338596181_531838789024325_1808354245233077332_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeG7FQ9KGs4KQpXi234AUUKG0qoLs1XrBjLSqguzVesGMhXF_OXrhbE8bTjw-QhCyeC7sZXDIQf08vG3v8frR8L8&_nc_ohc=FmKWG_L8-8IAX8p8p3O&_nc_ht=scontent.fbkk22-1.fna&oh=03_AdQ3DjZNqmcIPDN6NT6sOnA2soPvQ1aI_m-dQLPxoKfTzQ&oe=645A2F30">
+    <img id="home-image" src="https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.15752-9/340919240_1360983184683202_2740031132046513215_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEnGabnmaNjyxH7iWfjacMmU_BKFEWdiUxT8EoURZ2JTKheqfhIu8x5gFqpUHVeqKOq8Ga3RI89I9OIwcjpP23g&_nc_ohc=Oz3wtxmvwPwAX-OBLlU&_nc_ht=scontent.fbkk22-2.fna&oh=03_AdSG4agAeDSDtq4-xvKThUZZsMzYQMQugc59Hd5vFUtwPA&oe=64635348">
+    <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <a href="/Front-End/view/hotel.php">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button></a>
+   </div>
+</div>
+</div>
+  
   </div>
 
   <!--............ Footer ............-->
