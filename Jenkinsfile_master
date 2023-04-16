@@ -16,7 +16,6 @@ pipeline {
                 steps {
                     dir('Devtools') {
                         echo "Current path is ${pwd()}"
-                        echo "test"
                         sh "docker-compose build"
                     }
                 }
